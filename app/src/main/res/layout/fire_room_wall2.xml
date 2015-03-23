@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wall2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1.0" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.44"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.56"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.22"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.20"
+                android:orientation="vertical"
+                android:weightSum="1.0" >
+
+                <RelativeLayout
+                    android:id="@+id/couch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.41" >
+
+                    <ImageButton
+                        android:id="@+id/skull"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-8dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/skull"
+                        android:onClick="skullTapped"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/cushion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="50dp"
+                        android:onClick="liftCushion" 
+                             android:background="@android:color/transparent" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/hammer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.08"
+                    android:onClick="zoomImage"
+                    android:visibility="gone"
+                         android:background="@android:color/transparent"  />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.20"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3" >
+
+                <ImageButton
+                    android:id="@+id/chest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/chest_closed" />
+
+                <Button
+                    android:id="@+id/skull_inchest"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="53dp"
+                    android:layout_height="33dp"
+                    android:layout_centerInParent="true"
+                    android:onClick="zoomImage" 
+                    android:visibility="invisible"
+                         android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/lock"
+                    android:layout_width="42dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/skull_inchest"
+                    android:layout_marginRight="0dp"
+                    android:layout_toLeftOf="@id/skull_inchest"
+                    android:onClick="openTheLock"
+                         android:background="@android:color/transparent"  />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/zoomed_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

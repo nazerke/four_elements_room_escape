@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wall1Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EarthRoomActivity" >
+<LinearLayout    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+     <Button android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:visibility="invisible"/>
+    <LinearLayout    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:layout_weight="18"
+    android:orientation="vertical">
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:visibility="invisible"/>
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:id="@+id/winter_painting"
+        android:onClick="zoomPainting" 
+             android:background="@android:color/transparent" />  
+</LinearLayout>
+<Button android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:visibility="invisible"/>
+    <LinearLayout    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:layout_weight="14"
+    android:orientation="vertical">
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:visibility="invisible"/>
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:id="@+id/castle_painting"
+        android:onClick="zoomPainting"
+             android:background="@android:color/transparent"  />
+    
+</LinearLayout>
+<Button android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:visibility="invisible"/>
+  <LinearLayout    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:layout_weight="17"
+    android:orientation="vertical">
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:visibility="invisible"/>
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="33"
+        android:id="@+id/frost_painting"
+        android:onClick="zoomPainting"
+        android:background="@drawable/round_button" />
+  
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:id="@+id/globe"
+         android:onClick="globeTapped"
+         android:background="@drawable/globe_aus_nopin" >
+        <Button android:layout_width="fill_parent"
+            android:layout_height="0dp"
+		android:layout_weight="65"
+		android:visibility="invisible"/>
+             <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="0dp"
+		android:layout_weight="10"
+		android:id="@+id/pinLayout">
+		<Button android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="70"
+		    android:visibility="invisible"/>
+			<Button 
+			    android:id="@+id/pin"
+			    android:onClick="zoomImage"
+			    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="30"
+		    android:clickable="false"
+		         android:background="@android:color/transparent" />
+		</LinearLayout>
+		             <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="0dp"
+		android:layout_weight="17"
+		android:weightSum="100">
+			<Button 
+			    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="32"
+		    android:visibility="invisible"/>
+				<Button 
+			    android:id="@+id/brisbane"
+			    android:onClick="placePin"
+			    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="40"
+		    android:clickable="false"
+		         android:background="@android:color/transparent" />
+		</LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+<Button android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:visibility="invisible"/>
+<LinearLayout  android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:layout_weight="19"
+    android:orientation="vertical">
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:visibility="invisible"/>
+       <Button
+        android:id="@+id/heart_painting"
+ 		android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="27"
+        android:onClick="zoomPainting" 
+         android:background="@android:color/transparent"/>
+</LinearLayout>
+<Button android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:visibility="invisible"/>
+    
+<LinearLayout  android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:layout_weight="13"
+    android:orientation="vertical">
+   <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/pumpkin_painting"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="34"
+        android:background="@drawable/round_button"
+        android:onClick="zoomPainting"/>
+   </LinearLayout>
+   
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/castle_painting_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="100"
+        android:visibility="gone"
+        android:onClick="zoomDown">
+<Button android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="47"
+    android:visibility="invisible"/>
+<LinearLayout android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="4"
+    android:weightSum = "100"
+    android:orientation="vertical"
+    >
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:visibility="invisible"/>
+    <Button
+            android:id="@+id/globe_crown"
+            android:layout_width="fill_parent"
+       	    android:layout_height="0dp"
+        	android:layout_weight="5"
+            android:onClick="zoomImage" 
+             android:background="@android:color/transparent"/>
+</LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frost_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="100"
+        android:visibility="gone"
+        android:onClick="zoomDown">
+<Button android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="35"
+    android:visibility="invisible"/>
+<LinearLayout  android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="30"
+    android:weightSum="100"
+    android:orientation="vertical">
+          <Button
+            android:layout_width = "fill_parent"
+   			 android:layout_height = "0dp"
+    		android:layout_weight="23"
+    		android:visibility="invisible"/>
+        <Button
+            android:id="@+id/frost"
+            android:layout_width = "fill_parent"
+   			 android:layout_height = "0dp"
+    		android:layout_weight="50"
+            android:onClick="zoomImage" 
+             android:background="@android:color/transparent"/>
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/heart_painting_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="100"
+        android:visibility="gone"
+        android:onClick="zoomDown">
+<Button android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="47"
+    android:visibility="invisible"/>
+<LinearLayout  android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="5"
+    android:weightSum="100"
+    android:orientation="vertical">
+          <Button
+            android:layout_width = "fill_parent"
+   			 android:layout_height = "0dp"
+    		android:layout_weight="52"
+    		android:visibility="invisible"/>
+        <Button
+             android:id="@+id/heart"
+            android:layout_width = "fill_parent"
+   			 android:layout_height = "0dp"
+    		android:layout_weight="7"
+            android:onClick="zoomImage" 
+             android:background="@android:color/transparent"/>
+    </LinearLayout>
+   
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/zoomed_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"  />
+
+    <ImageView
+        android:id="@+id/pumpkin_painting_zoomed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/winter_painting_zoomed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:id="@+id/wall3">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.31"
+            android:visibility="invisible" />
+
+        <LinearLayout
+                        android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.08"
+            android:orientation="vertical"
+            android:weightSum="1.0" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.64"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/yellow"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.18"
+                android:onClick="zoomImage" 
+                        android:background="@android:color/transparent" 
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.24"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/ll4" 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.15"
+            android:orientation="vertical"
+            android:weightSum="1.0" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.16" 
+                android:visibility="invisible"/>
+
+            <ImageButton
+                android:id="@+id/jug"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:background="@drawable/jug"
+                android:onClick="zoomImage"
+                android:layout_weight="0.27" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.27" 
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/drawer_two"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:onClick="zoomDrawer"
+                    android:visibility="invisible" 
+                    android:background="@android:color/transparent"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/paper_ball"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:onClick="zoomImage" 
+                                android:background="@android:color/transparent" 
+                        />
+
+                    <Button
+                        android:id="@+id/paperballDrawer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:onClick="openKeyDrawer"
+                         android:background="@android:color/transparent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/zoomed_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/cabinet_zoomed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:visibility="gone"
+        android:weightSum="1.0" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.55"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.13"
+            android:orientation="vertical"
+            android:weightSum="1.0" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.45" 
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/key"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.07"
+                android:onClick="zoomImage" 
+                     android:background="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/zoomed_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+ <ImageView
+        android:id="@+id/paperballZoomed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" 
+        android:onClick="closePaperball"/>
+</RelativeLayout>
+	
+<!-- From: file:/Users/user/Downloads/FourElements/app/src/main/res/layout/fire_room_wall3.xml -->

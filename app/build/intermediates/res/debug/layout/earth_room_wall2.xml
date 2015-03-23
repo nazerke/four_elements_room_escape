@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:id="@+id/wall2EarthRoom"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+	    android:weightSum="100" >
+	    <Button android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="46"
+    android:visibility="invisible"/>
+<LinearLayout  android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="13"
+    android:weightSum="100"
+    android:orientation="vertical">
+          <Button
+            android:layout_width = "fill_parent"
+   			 android:layout_height = "0dp"
+    		android:layout_weight="30"
+    		android:background="@android:color/transparent" />
+        <Button
+             android:id="@+id/key"
+            android:layout_width = "fill_parent"
+   			 android:layout_height = "0dp"
+    		android:layout_weight="7"
+            android:onClick="zoomImage" 
+             android:background="@android:color/transparent"/>
+    </LinearLayout>
+	    
+	    
+	</LinearLayout>
+	<ImageView android:id="@+id/zoomed_image" android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone" />
+
+	<Button
+	    android:id="@+id/lock"
+	    android:layout_width="30dp"
+	    android:layout_height="35dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:onClick="openTheLock"  android:background="@android:color/transparent"/>
+	
+		<ImageView android:id="@+id/joker" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:visibility="gone" />
+
+</RelativeLayout>
+<!-- From: file:/Users/user/Downloads/FourElements/app/src/main/res/layout/earth_room_wall2.xml -->

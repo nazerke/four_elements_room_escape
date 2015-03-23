@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:id="@+id/wall1Layout"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	 tools:context=".FireRoomActivity">
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:weightSum="100">
+    <Button android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="20"
+        android:visibility="invisible"/>
+      <LinearLayout android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="14"
+        android:weightSum="100"
+        android:orientation="vertical">
+         <Button android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="46"
+            android:visibility="invisible"/>
+                  
+        <Button android:id="@+id/wardrobe"
+             android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:onClick="zoomWardrobe"
+                 android:background="@android:color/transparent" 
+		/>
+  <LinearLayout android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:weightSum="3.0"
+      android:orientation="horizontal"
+      android:layout_weight="14">
+       <Button 
+             android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:visibility="invisible"/>
+        <Button android:id="@+id/stool"
+             android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:onClick="zoomImage"
+            android:visibility="invisible"
+                 android:background="@android:color/transparent" />
+          <Button 
+             android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:visibility="invisible"/>
+  </LinearLayout>
+        </LinearLayout>
+    
+      <Button android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="17"
+        android:visibility="invisible"/>
+        <LinearLayout android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="34"
+        android:weightSum="100"
+        android:orientation="vertical">
+        <Button android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="23"
+            android:visibility="invisible"/>
+              <Button  android:id="@+id/fishtank" 
+                  android:onClick="fillBottle"
+                  android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+                 android:background="@android:color/transparent" 
+           />
+        </LinearLayout>
+</LinearLayout>
+<LinearLayout android:id="@+id/colour_code"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:weightSum="100"
+    android:onClick="makeColourCodeInvisible"
+    android:orientation="vertical"
+    android:visibility="gone">
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="44"
+        android:visibility="invisible"/>
+	
+  <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="33"
+        android:weightSum="100">
+              <Button android:layout_width="0dp"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="6"
+                  android:visibility="invisible"/>
+              <ImageButton android:id="@+id/white"  android:layout_width="0dp"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="18" android:background="@drawable/white"
+					android:onClick="colorCodeOneClicked" />
+				<Button android:layout_width="0dp"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1"
+                  android:visibility="invisible"/>
+		<ImageButton android:id="@+id/red"  android:layout_width="0dp"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="18"
+			android:background="@drawable/red_square" android:onClick="colorCodeTwoClicked" />
+		<Button android:layout_width="0dp"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1"
+                  android:visibility="invisible"/>
+		<ImageButton android:id="@+id/dark_blue"
+			 android:layout_width="0dp"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="18" android:background="@drawable/dark_blue"
+			android:onClick="colorCodeThreeClicked" />
+		<Button android:layout_width="0dp"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1"
+                  android:visibility="invisible"/>
+		<ImageButton android:id="@+id/purple"
+			 android:layout_width="0dp"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="18" android:background="@drawable/purple"
+			android:onClick="colorCodeFourClicked" />
+	</LinearLayout>
+</LinearLayout>
+
+	<ImageView android:id="@+id/zoomed_image"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" />
+
+</RelativeLayout>
+<!-- From: file:/Users/user/Downloads/FourElements/app/src/main/res/layout/water_room_wall4.xml -->

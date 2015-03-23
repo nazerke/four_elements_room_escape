@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <View android:id="@+id/gap" android:layout_width="wrap_content"
+		android:layout_height="0dip" android:layout_alignParentBottom="true" />
+<ImageButton android:id="@+id/bag" android:layout_width="65dp"
+         android:background="@android:color/transparent" 
+		android:layout_height="65dp" android:layout_alignBottom="@+id/storage"
+		android:layout_alignParentRight="true" android:layout_marginRight="10dp"
+		android:adjustViewBounds="true"
+		android:onClick="bagClicked"/>
+ 
+<HorizontalScrollView android:id="@id/storage"
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" 
+         android:layout_above="@id/gap"
+         android:layout_toLeftOf="@id/bag"
+         android:layout_marginBottom="10dp"
+		android:layout_marginRight="27dp" android:layout_marginLeft="10dp"
+		android:visibility="invisible"
+		>
+       <RelativeLayout
+            android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            >
+            <ImageButton
+                android:id="@+id/ImageButton01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_square" 
+                android:onClick="itemSelected"
+                />
+            <ImageButton
+                android:id="@+id/ImageButton02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ImageButton01"
+                android:background="@drawable/single_square"
+                android:layout_marginLeft="16dp"
+                android:onClick="itemSelected"
+                />
+            <ImageButton
+                android:id="@+id/ImageButton03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_square" 
+                android:layout_toRightOf="@id/ImageButton02"
+                android:layout_marginLeft="16dp"
+                android:onClick="itemSelected"
+                />
+            <ImageButton
+                android:id="@+id/ImageButton04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_square"
+                android:layout_toRightOf="@id/ImageButton03"
+                android:layout_marginLeft="16dp" 
+  				android:onClick="itemSelected"
+                />
+            <ImageButton
+                android:id="@+id/ImageButton05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_square"
+                android:layout_toRightOf="@id/ImageButton04"
+                android:layout_marginLeft="16dp"
+				 android:onClick="itemSelected"
+                
+                />
+                 <ImageButton
+                     android:id="@+id/ImageButton06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:background="@drawable/single_square"
+                android:layout_toRightOf="@id/ImageButton05" 
+                android:layout_marginLeft="16dp"
+                 android:onClick="itemSelected"/>
+            <ImageButton
+                android:id="@+id/ImageButton07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_square"
+                android:layout_toRightOf="@id/ImageButton06"
+                android:layout_marginLeft="16dp"
+                android:onClick="itemSelected"
+                />
+            <ImageButton
+                android:id="@+id/ImageButton08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_square"
+                android:layout_toRightOf="@id/ImageButton07"
+                android:layout_marginLeft="16dp"
+                                android:onClick="itemSelected"
+                />
+            <ImageButton
+                android:id="@+id/ImageButton09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_square"
+                android:layout_toRightOf="@id/ImageButton08"
+                android:layout_marginLeft="16dp"
+                                android:onClick="itemSelected"
+                />
+            <ImageButton
+                android:id="@+id/ImageButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_square"
+                android:layout_toRightOf="@id/ImageButton09"
+                android:layout_marginLeft="16dp"
+                                android:onClick="itemSelected"
+                />
+                 <ImageButton
+                android:id="@+id/ImageButton11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_square"
+                android:layout_toRightOf="@id/ImageButton10"
+                android:layout_marginLeft="16dp"
+                                android:onClick="itemSelected"
+                />
+        </RelativeLayout>
+    </HorizontalScrollView>
+    <ImageButton android:id="@+id/left" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignLeft="@+id/storage"
+		android:layout_centerVertical="true" android:background="@null"
+		android:onClick="previousWall" android:src="@drawable/left" />
+	<ImageButton android:id="@+id/right" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignRight="@id/bag"
+		android:layout_centerVertical="true" android:background="@null"
+		android:onClick="nextWall" android:src="@drawable/right" />
+
+	<TextView
+	    android:id="@+id/closeup_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@id/storage"
+	    android:layout_centerHorizontal="true"
+		android:textColor="#ffd1a3"
+		android:textStyle="bold"
+		android:textSize="25sp">
+
+	</TextView>
+
+</RelativeLayout><!-- From: file:/Users/user/Downloads/FourElements/app/src/main/res/layout/common_views_scrollable.xml -->

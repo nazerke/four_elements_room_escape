@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/beginning"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EarthRoomBeginActivity"
+     xmlns:ads="http://schemas.android.com/apk/res-auto" 
+     xmlns:mm="http://millennialmedia.com/android/schema">
+  <!--  <com.google.android.gms.ads.AdView android:id="@+id/adView"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           ads:adSize="SMART_BANNER"
+                           ads:adUnitId="ca-app-pub-7246305362398013/5293549281"/> -->
+                               <com.millennialmedia.android.MMAdView
+        android:id="@+id/adView"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        mm:width="320"
+        mm:height="50"
+        mm:apid="152176" />
+    <ImageButton
+        android:id="@+id/dark1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="163dp" 
+        android:background="@drawable/dark1"
+       android:onClick="spin"  />
+<ImageView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/earth_transition"
+    android:id="@+id/transition"
+    android:visibility="gone"/>
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:id="@+id/progress"
+    android:visibility="gone">
+        <ProgressBar android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/progressBar"
+    android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/load"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/loading" 
+         android:textSize="40sp"
+         android:textColor="#FFFFF0"   
+         android:layout_gravity="center"  
+         android:layout_marginTop="20dp"
+         />
+
+</LinearLayout>
+</RelativeLayout>

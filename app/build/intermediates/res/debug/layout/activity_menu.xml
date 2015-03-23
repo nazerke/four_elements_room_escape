@@ -1,0 +1,326 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    tools:context=".MenuActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="100" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="8" 
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="61"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="43" 
+                android:background="@android:color/transparent" />
+
+            <RelativeLayout
+                android:id="@+id/board_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="55"
+                android:background="@drawable/plain_board" >
+
+                <LinearLayout
+                    android:id="@+id/walkthroughs_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                  android:visibility="gone"
+                    android:weightSum="100" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="35"
+                                android:background="@android:color/transparent" 
+                         />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="32"
+                        android:weightSum="100" >
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="17"
+                                    android:background="@android:color/transparent" 
+                             />
+
+                        <Button
+                            android:id="@+id/fire"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="18"
+                            android:onClick="previewFireRoom"
+                                    android:background="@android:color/transparent" 
+                             />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="7"
+                            android:visibility="invisible"
+                             />
+
+                        <Button
+                            android:id="@+id/water"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="18"
+                            android:onClick="previewWaterRoom"
+                                    android:background="@android:color/transparent" 
+                             />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="7"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/earth"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="17"
+                            android:onClick="previewEarthRoom" 
+                                    android:background="@android:color/transparent" 
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/settings_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                   android:visibility = "gone"
+                    android:weightSum="100" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="30" 
+                                android:background="@android:color/transparent" 
+                        />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="40"
+                        android:weightSum="100" >
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="48" 
+                                    android:background="@android:color/transparent" 
+                            />
+
+                        <ImageButton
+                            android:id="@+id/sound"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/on"
+                            android:onClick="change"
+                            android:tag="on" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="8" 
+                                    android:background="@android:color/transparent" 
+                            />
+
+                        <ImageButton
+                            android:id="@+id/ad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/on"
+                            android:onClick="change"
+                            android:tag="on" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/about_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:weightSum="100" 
+                    android:visibility="gone">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="53" 
+                        android:visibility="invisible"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="40"
+                        android:weightSum="100" >
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="70" 
+                            android:visibility="invisible"/>
+
+                        <TextView
+                            android:id="@+id/credits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:onClick="playCredits"
+                            android:text="@string/credits"
+                            android:textColor="#FFFFF0"
+                            android:textSize="20sp" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/delimiter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" | "
+                            android:textColor="#FFFFF0"
+                            android:textSize="25sp" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/subscribe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:onClick="createForm"
+                            android:text="@string/subscribe"
+                            android:textColor="#FFFFF0"
+                            android:textSize="20sp" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@android:color/transparent"  />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="26"
+            android:orientation="vertical"
+            android:weightSum="100" 
+            android:id="@+id/left_menu">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8" 
+                android:visibility="invisible"/>
+            <TextView
+        android:id="@+id/new_game"
+        android:clickable="true"
+        android:onClick="newGame"
+        android:text="new game"
+        android:textColor="#FFFFF0"
+        android:textSize="25sp"
+        android:layout_width="fill_parent"
+      	 android:layout_height="0dp"
+      	 android:layout_weight="14"
+      	 android:gravity="center" />
+       <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:visibility="invisible" />
+    <TextView
+        android:id="@+id/resume"
+                android:layout_width="fill_parent"
+      	 android:layout_height="0dp"
+      	 android:layout_weight="12"
+      	 android:gravity="center"
+        android:clickable="true"
+        android:onClick="resume"
+        android:text="resume"
+        android:textColor="#FFFFF0"
+        android:textSize="25sp" />
+ <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7" 
+                      android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/settings"
+               android:layout_width="fill_parent"
+      	 android:layout_height="0dp"
+      	 android:layout_weight="10"
+      	 android:gravity="center"
+        android:clickable="true"
+        android:onClick="settings"
+        android:text="settings"
+        android:textColor="#FFFFF0"
+        android:textSize="25sp" />
+ <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                      android:visibility="invisible" />
+    <TextView
+        android:id="@+id/walkthroughs"
+              android:layout_width="fill_parent"
+      	 android:layout_height="0dp"
+      	 android:layout_weight="10"
+      	 android:gravity="center"
+        android:clickable="true"
+        android:onClick="walkthroughs"
+        android:text="walkthroughs"
+        android:textColor="#FFFFF0"
+        android:textSize="20sp" />
+ <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                      android:visibility="invisible" />
+    <TextView
+        android:id="@+id/about"
+          android:layout_width="fill_parent"
+      	 android:layout_height="0dp"
+      	 android:layout_weight="12"
+      	 android:gravity="center"
+        android:clickable="true"
+        android:onClick="about"
+        android:text="about"
+        android:textColor="#FFFFF0"
+        android:textSize="25sp" />
+            
+        </LinearLayout>
+    </LinearLayout>
+<ImageView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fire_transition"
+    android:id="@+id/transition"
+    android:visibility="gone"/>
+</RelativeLayout><!-- From: file:/Users/user/Downloads/FourElements/app/src/main/res/layout/activity_menu.xml -->

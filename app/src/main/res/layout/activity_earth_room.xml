@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:mm="http://millennialmedia.com/android/schema">
+<FrameLayout android:layout_width="fill_parent" android:id="@+id/earth_room_layout"
+	android:layout_height="fill_parent"
+	android:visibility="invisible">
+
+	<ViewFlipper android:id="@+id/earth_room_flipper"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<include layout="@layout/earth_room_wall1" android:id="@+id/first" />
+		<include layout="@layout/earth_room_wall2" android:id="@+id/second" />
+		 <include layout="@layout/earth_room_wall3" android:id="@+id/third" />
+		<include layout="@layout/earth_room_wall4" android:id="@+id/fourth" />
+	</ViewFlipper>
+
+	<com.fourelements.roomescape.CustomView android:id="@+id/customView"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+ android:background="@drawable/earth_transition"
+    android:id="@+id/transition"
+    >
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+         android:background="@android:color/transparent"/>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="horizontal"
+        android:weightSum="100">
+		<Button android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="37"
+		     android:background="@android:color/transparent"/>
+		<LinearLayout
+		    android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:background="@drawable/enter_earth_room"
+    android:id="@+id/enter_layout"
+    android:layout_weight="38"
+    android:orientation="vertical"
+    android:weightSum="100">
+    <Button android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:visibility="invisible"/>
+		    <LinearLayout android:layout_width="fill_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="53"
+		        android:orientation="horizontal"
+		        android:weightSum="100">
+		        <Button android:layout_width="0dp"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="35"
+		            android:visibility="invisible"/>
+		        <Button android:layout_width="0dp"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="30"
+		            android:id="@+id/enter"
+		            android:onClick="nextLevel"
+		                 android:background="@android:color/transparent" />
+		    </LinearLayout>
+		</LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    <com.millennialmedia.android.MMAdView
+        android:id="@+id/adView"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        mm:width="320"
+        mm:height="50"
+        mm:apid="152176" />
+</RelativeLayout>

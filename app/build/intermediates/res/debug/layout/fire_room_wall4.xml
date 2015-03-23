@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/wall4">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="37" >
+
+            <RelativeLayout
+                android:id="@+id/frames_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="zoomFrames"  >
+
+                <ImageView
+                    android:id="@+id/fire_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/small_fire_icon" />
+
+                <ImageView
+                    android:id="@+id/water_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/fire_frame"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/fire_frame"
+                    android:background="@drawable/small_water_icon" />
+
+                <ImageView
+                    android:id="@+id/earth_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fire_frame"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/water_frame"
+                    android:background="@drawable/small_earth_icon" />
+
+                <ImageView
+                    android:id="@+id/wind_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/water_frame"
+                    android:layout_alignTop="@+id/earth_frame"
+                    android:background="@drawable/small_wind_icon" />
+            </RelativeLayout>
+        </RelativeLayout>        
+</LinearLayout>
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17.0"
+        android:orientation="horizontal">
+        <Button
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.08"
+            android:scaleType="fitXY"
+            android:visibility="invisible"/>
+             <ImageButton
+             android:id="@+id/fireplace" 
+             android:background="@drawable/fire"      
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.16"
+            android:scaleType="fitXY"/>  
+                 <Button
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.76"
+            android:scaleType="fitXY"
+            android:visibility="invisible"/> 
+    </LinearLayout>
+<LinearLayout     android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="28" 
+        android:orientation="horizontal">
+     <Button 
+         android:id="@+id/gap"
+          android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="24"
+            android:visibility="invisible"/>
+     
+        <LinearLayout  android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="18"
+            android:adjustViewBounds="true"
+            android:orientation="horizontal">		
+       		<Button 
+       		    android:id="@+id/blue"
+       		    android:layout_width="fill_parent"
+       				 android:layout_height="45dp"
+                	android:layout_gravity="bottom"
+                	 android:onClick="zoomImage"
+                	      android:background="@android:color/transparent" />
+        </LinearLayout>
+               <Button  android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:visibility="invisible"
+            />
+       <LinearLayout android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="12"
+     		 android:weightSum="1.0"
+            
+            android:orientation="vertical">
+   			<Button 
+   			      	android:id="@+id/white"
+   			    	android:layout_width="fill_parent"
+       				 android:layout_height="0dp"
+       				 android:layout_weight="0.5"
+                	android:layout_gravity="bottom"
+                	 android:onClick="zoomImage"
+                	 android:visibility="gone"
+                	   android:background="@android:color/transparent" 
+                	 />
+       		</LinearLayout>
+           <Button  android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="48"
+            android:visibility="invisible"
+            />
+</LinearLayout>
+</LinearLayout>
+    <ImageView
+        android:id="@+id/frames_zoomed_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:onClick="hideZoomedFrames"
+             android:visibility="gone"  />
+ <RelativeLayout
+        android:id="@+id/frameZoomedLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_centerVertical="true"
+android:layout_marginLeft="45dp"
+android:visibility="gone" 
+       >
+
+        <ImageButton
+            android:id="@+id/fire_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fire_icon"
+            android:onClick="changeIcon" />
+
+        <ImageButton
+            android:id="@+id/water_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fire_icon"
+            android:layout_marginLeft="49dp"
+            android:layout_toRightOf="@+id/fire_icon"
+            android:background="@drawable/water_icon"
+            android:onClick="changeIcon" />
+
+        <ImageButton
+            android:id="@+id/earth_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fire_icon"
+            android:layout_marginTop="40dp"
+            android:layout_toLeftOf="@+id/water_icon"
+            android:background="@drawable/earth_icon"
+            android:onClick="changeIcon" />
+
+        <ImageButton
+            android:id="@+id/wind_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/water_icon"
+            android:layout_alignTop="@+id/earth_icon"
+            android:background="@drawable/wind_icon"
+            android:onClick="changeIcon" />
+    </RelativeLayout>
+        <ImageView
+        android:id="@+id/zoomed_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+</RelativeLayout><!-- From: file:/Users/user/Downloads/FourElements/app/src/main/res/layout/fire_room_wall4.xml -->

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title">Google Mobile Ads Interstitial Sample</string>
+    <string name="load_interstitial">Load Interstitial</string>
+    <string name="interstitial_not_ready">Interstitial Not Ready</string>
+    <string name="app_name">Room</string>
+    <string name="loading">Loading...</string>
+    <string name="title_activity_fire_room">FireRoomActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_earth_room">EarthRoomActivity</string>
+    <string name="title_activity_earth_room_end">EarthRoomEndActivity</string>
+    <string name="title_activity_beginning">Beginning</string>
+    <string name="title_activity_earth_room_begin">EarthRoomBeginActivity</string>
+    <string name="title_activity_water_room">WaterRoomActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="bag">bag</string>
+    <string name="nextWall"> next wall</string>
+    <string name="previousWall">previous wall</string>
+    <string name="hintText">hint text</string>
+    <string name="book">book</string>
+    <string name="zoomImageBackground">zoomImageBackground</string>
+    <string name="open_book">open_book</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="water_room_key">"A shell-shaped key"</string>
+    <string name="cassette">"A mysterious cassette"</string>
+    <string name="fountain_photo">"A strange photograph"</string>
+    <string name="mirror">"A very old mirror"</string>
+    <string name="stool">"You found a stool"</string>
+    <string name="smth">"A shell-shaped key"</string>
+    <string name="bottle">"It's empty..."</string>
+    <string name="crown">"A princess crown"</string>
+    <string name="snowflake">"A snowflake shaped brooch"</string>
+    <string name="heart">"A heart."</string>
+    <string name="pumpkin">"A pumpkin"</string>
+    <string name="pin">"A map pin."</string>
+    <string name="fire_room">"A strange room with no door."</string>
+    <string name="red_paint">"It's still fresh."</string>
+    <string name="brain_jar_with_liquid">"I can't access it with all that liquid..."</string>
+    <string name="hammer">"A claw hammer."</string>
+    <string name="locked">"It's locked."</string>
+    <string name="colour_code">"Who can I ask about these?"</string>
+    <string name="let_me_rest">"Leave me alone. Let me rest..."</string>
+    <string name="empty_tonight">"I feel all empty tonight"</string>
+    <string name="first_frame_painted">"Strange..."</string>
+    <string name="four_complete">"The four are complete!"</string>
+    <string name="credits"><u>"Credits"</u></string>
+    <string name="subscribe"><a href="www.youtube.com">Subscribe</a></string>
+    <string name="title_activity_test_empty">TestEmptyActivity</string>
+    <string name="title_activity_logo_splash">Four Elements Room Escape</string>
+    <string name="title_activity_fire_room_splash">FireRoomSplash</string>
+    <string name="title_activity_transition">TransitionActivity</string>
+    <string name="title_activity_delete_this_later">DeleteThisLater</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_plain">PlainActivity</string>
+    <string name="title_activity_ad_mob">AdMobActivity</string>
+
+</resources>

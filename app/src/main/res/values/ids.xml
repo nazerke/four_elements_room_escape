@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <item name="key_item" type="id"/>
+        <item name="key_er_item" type="id"/>
+        <item name="cassette_item" type="id"/>
+        <item name="mirror_item" type="id"/>
+        <item name="stool_item" type="id"/>
+        <item name="photo_item" type="id"/>
+        <item name="bottle_item" type="id"/>
+        <item name="crown_item" type="id"/>  
+        <item name="heart_item" type="id"/>
+        <item name="snowflake_item" type="id"/>
+        <item name="pumpkin_item" type="id"/>
+          <item name="eyehole_open" type="id"/>
+          <item name="pin_item" type="id"/>
+          <item name="jar_noliquid" type="id"/>
+           <item name="brain" type="id"/>
+                      <item name="bottle_full_item" type="id"/>
+           
+ <item name="red_item" type="id"/>
+   <item name="blue_item" type="id"/>
+     <item name="yellow_item" type="id"/>
+       <item name="white_item" type="id"/>
+         <item name="paper_item" type="id"/>
+  <item name="brain_item" type="id"/>
+    <item name="hammer_item" type="id"/>
+      <item name="skull_item" type="id"/>
+        <item name="jug_item" type="id"/>
+         <item name="colourhint_item" type="id"/>
+           <item name="key_fr_item" type="id"/>
+                      <item name="off" type="id"/>
+                      <item name="bottle_full" format="string" type="id">bottle_full</item>
+           
+</resources>

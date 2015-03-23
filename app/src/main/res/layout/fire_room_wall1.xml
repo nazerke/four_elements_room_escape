@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:id = "@+id/wall1">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+     <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="63"
+        android:visibility="invisible" />
+     <LinearLayout
+       android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="23"
+        android:orientation="horizontal">
+         <Button
+             android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        android:background="@android:color/transparent" 
+       />
+      <LinearLayout
+             android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="15"
+        android:weightSum="1.0"
+        android:orientation="vertical" >
+        <Button android:layout_width="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_height="0dp"
+             android:visibility="invisible"/>
+          <Button 
+              android:id="@+id/riddle_book"
+              android:layout_width="fill_parent"
+            android:layout_weight="0.3"
+            android:layout_height="0dp"
+             android:onClick="zoomImage"
+               android:background="@android:color/transparent" 
+           />
+        </LinearLayout>
+                           <Button
+       android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="25"
+        android:background="@android:color/transparent" />
+       <ImageButton
+           android:id="@+id/brainjar"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="12"
+        android:background="@drawable/brainjar" 
+         android:onClick="zoomImage"/>
+   <Button
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="27"
+        android:background="@android:color/transparent" />
+   <LinearLayout    android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="11"
+        android:orientation="vertical"
+        android:weightSum="1.0">
+    <Button
+        android:id="@+id/red_paint"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:onClick="zoomImage"
+        android:background="@android:color/transparent" />
+      </LinearLayout>
+        </LinearLayout>
+     
+      <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:visibility="invisible"/>
+</LinearLayout>
+    <ImageView
+        android:id="@+id/zoomed_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+
+
+        <ImageView
+            android:id="@+id/brainjar_zoomed_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/brainjar_zoomed"
+            android:visibility="gone" />
+	
+        <ImageView
+            android:id="@+id/riddleBook_zoomed_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/riddle_zoomed"
+            android:visibility="gone" 
+            android:onClick="closeRiddleBook"/>
+
+</RelativeLayout>
